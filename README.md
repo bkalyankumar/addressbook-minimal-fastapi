@@ -29,3 +29,5 @@ Install dependancies
     $ pip install -r requirements.txt
 ### Launching the app
     $ uvicorn main:app --reload
+### Open your browser and enter the below url to open Swagger UI
+    $ http://127.0.0.1:8000/docs
