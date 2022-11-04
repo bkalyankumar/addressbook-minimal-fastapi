@@ -1,2 +1,2 @@
-# Address Book CRUD fastapi
+# Address Book CRUD
 Address Book using FastAPI
