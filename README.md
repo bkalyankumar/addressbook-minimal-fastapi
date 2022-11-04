@@ -1,2 +1,2 @@
-# Address Book CRUD
-Address Book using FastAPI
+# Address Book CRUD API
+Developed using Python, FastAPI
