@@ -137,3 +137,16 @@ def get_address_by_coordinates(lat: float, lon: float, dis: float, db: session =
             address_list.append(address)
 
     return address_list
+
+#using requests module
+import requests, json
+@app.get("/testrequest")
+def test_function(request: Request):
+    host = request.client.host
+    print("*************************************")
+    print(host)
+    get_test_url= f"http://{host}:8005/addressbook/api/v1/"
+    test_url = "http://127.0.0.1:8005/addressbook/api/v1/"
+    test_get_response = requests.get(get_test_url)
+    if test_get_response.status_code == 200:
+        return(json.loads(test_get_response.content.decode('utf-8')))
